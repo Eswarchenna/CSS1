@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display</title>
+    <style>
+        .div {
+            display: block;
+            background-color: lightblue;
+        }
+
+        .division {
+            display: block;
+            background-color: rgb(192, 106, 157);
+        }
+
+        .span {
+            display: inline;
+            background-color: yellow;
+        }
+
+        .box {
+            display: inline-block;
+            width: 298px;
+            height: 155px;
+            background-color: rgb(181, 139, 181);
+        }
+
+        .block {
+            display: inline-block;
+            width: 298px;
+            height: 155px;
+            background-color: rgb(93, 190, 124);
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .nano {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h>Display Block</h>
+    <div class="div">
+        <p>Explanation:</p>
+        <p>display : block takes full width nd stats on new line.</p>
+    </div>
+    <div class="division">
+        <p>Explanation :</p>
+        <p>Each div appewards on seperate line with full width</p>
+    </div>
+    <hr>
+    <h1>Display Inline</h1>
+    <div class="span">
+        <p>Explanation :</p>
+        <p>display : Inline keeps elements in same line.</p>
+    </div>
+    <h1>Display inline-Block</h1>
+    <div class="box">
+        <p>Explanation:</p>
+        <p>Allows width nd height while staying inline.</p>
+    </div>
+    <div class="block">
+        <p>Expected Output:</p>
+        <p>Boxs appear side by side.</p>
+    </div>
+    <hr>
+    <h1>Display None</h1>
+    <div class="hide">
+        <p>Explanation:</p>
+        <p>Hides element completely.</p>
+    </div>
+    <div class="nano">
+        <p>expected Output:</p>
+        <p>Hidden element will not appear</p>
+    </div>
+</body>
+
+</html>

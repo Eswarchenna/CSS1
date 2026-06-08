@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex Topics</title>
+    <style>
+        img {
+            float: left;
+            margin-left: 27px;
+            margin-right: 27px;
+            width: 128px;
+            height: 124px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .both {
+            clear: both;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .direction {
+            display: flex;
+            flex-direction: row;
+        }
+
+        img {
+            width: 32px;
+            height: 29px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Float Left</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sOjfc9YbRGNO6fgk4P9xm5gTW7KkMfCrpA&s">
+    <p>Explanation:</p>
+    <p>Moves Element to left</p>
+    <p>Expected Output </p>
+    <p>Text raps besides image</p>
+    <hr>
+    <h1>Flex Direction</h1>
+    <div class="flex">
+        <p>Explanation :</p>
+        <p>Controls row or column layout.</p>
+    </div>
+    <div class="direction">
+        <p>Expected Output:</p>
+        <p>Items appear horizontally.</p>
+    </div>
+    <hr>
+    <h1>clear both</h1>
+    <div class="clear">
+        <p>Explanation :</p>
+        <p>Stops Wraping.</p>
+    </div>
+    <div class="both">
+        <p>Expected output:</p>
+        <p>content moves below floated elements.</p>
+    </div>
+    <hr>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-sOjfc9YbRGNO6fgk4P9xm5gTW7KkMfCrpA&s">
+        <div class="name">Sunflower</div>
+        <div class="serch">serch for sunflower</div>
+        <div class="button">
+            <button>Search</button>
+        </div>
+    </header>
+    </div>
+</body>
+
+</html>
