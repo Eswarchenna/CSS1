@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Position</title>
+    <style>
+        .pattern{
+            position: relative;
+            position: sticky;
+            background-color: aqua;
+            top: 0;
+        }
+        .boxs{
+            position: static;
+        }
+        .boxes{
+            position: static;
+        }
+        .appear{
+            position:relative;
+            left: 50px;
+        }
+        .cards{
+            position: relative;
+            left: 200px;
+        }
+        .duck{
+            position: relative;
+            top: 3px;
+            right: 213px;
+            background-color: brown;
+        }
+        .default{
+            position: absolute;
+            top: 65px;
+            right: 20px;
+            background-color: brown;
+        }
+        .position{
+            position: fixed;
+            bottom: 20px;
+            background-color: aquamarine;
+        }
+        .fixed{
+            position: fixed;
+            right: 0%;
+            top:80%;
+            background-color: aqua;
+        }
+        .justify{
+            justify-content: center;
+            display: flex;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="pattern">
+        <h1>Position Sticky</h1>
+        <p>Explanation:</p>
+        <p>Becomes fixed when scrolling.</p>
+        <p>Expected Output:</p>
+        <p>Header sticky top.</p>
+    </div>
+    <h1>position static</h1>
+    <div class="boxes">
+        <p>Explanation:</p>
+        <p>Default wedpage postioning.</p>
+    </div>
+    <hr>
+    <div class="boxes">
+        <p>Expected Output</p>
+        <p>Elements apper normally.</p>
+    </div>
+    <hr>
+    <h1>Position Relative</h1>
+    <div class="appear">
+        <p>Explanation:</p>
+        <p>Moves relative to original position.</p>
+    </div>
+    <div class="cards">
+        <p>Expected output:</p>
+        <p>Elements shits right by 50px</p>
+    </div>
+    <hr>
+    <div class="duck">
+        <h1>Position Absolute</h1>
+        <p>Explanation:</p>
+        <p>Moves relative to parent.</p>
+    </div>
+    <div class="default">
+        <p>Expected output:</p>
+        <p>Elements appeas top_right.</p>
+    </div>
+    <hr>
+    <h1>Position Fixed</h1>
+    <div class="position">
+        <p>Explanation:</p>
+        <p>stays fixed during scroll.</p>
+    </div>
+    <div class="fixed">
+        <p>Explanation:</p>
+        <p>Elements remains visible while scrolling.</p>
+    </div>
+
+</body>
+
+</html>
