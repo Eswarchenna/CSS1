@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Otherconcepts</title>
+    <style>
+        .justify {
+            justify-content: center;
+            display: flex;
+        }
+
+        .content {
+            justify-content: center;
+            display: flex;
+        }
+
+        .align {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .items {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .gap {
+            gap: 20px;
+            background-color: blueviolet;
+            display: flex;
+            display: grid;
+        }
+
+        .output {
+            gap: 20px;
+            background-color: rgb(79, 61, 96);
+            display: flex;
+            display: grid;
+        }
+
+        .user {
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+        .one {
+            align-self: stretch;
+        }
+
+        .two {
+            align-items: stretch;
+        }
+
+        .grow {
+            flex-grow: 1;
+        }
+
+        .dull {
+            flex-grow: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Justify Content</h1>
+    <div class="justify">
+        <p>Explanation:</p>
+        <p>Aligns items horizontally.</p>
+    </div>
+    <div class="content">
+        <p>Expected Output:</p>
+        <p>Items move to center.</p>
+    </div>
+    <hr>
+    <h1>Align Items</h1>
+    <div class="align">
+        <p>Explanation:</p>
+        <p>Aligns items vertically.</p>
+    </div>
+    <div class="items">
+        <p>Expected Output:</p>
+        <p>Items vertically centered.</p>
+    </div>
+    <hr>
+    <h1>Gap</h1>
+    <div class="gap">
+        <p>Explanation :</p>
+        <p>Adds spacing.</p>
+    </div>
+    <div class="Output">
+        <p>Expected Output:</p>
+        <p>20px space between items.</p>
+    </div>
+    <hr>
+    <h1>Flex Wrap</h1>
+    <div class="user">
+        <p>Explanation:</p>
+        <p>Moves items to next line.flex-wrap tells flex items whether they should stay on one row or move to the next
+            row when there is not enough space.align-content is use to control the spacing between multiple rows(or
+            columns)of flex items when flex-wrap: wrap is enabled.the flex -wrap CSS property dictates whether elements
+            inside a flex container are forcedinto a single line or can wrap onto multiple lines. It is a crucial
+            property for building responsive web layouts without relying on media queries.</p>
+    </div>
+    <div class="Wrap">
+        <p>Expected Output:</p>
+        <p>Items wrap automatically.</p>
+    </div>
+    <hr>
+    <h1>Align self</h1>
+    <div class="one">
+        <p>Explanation:</p>
+        <p>Aligns individual item.</p>
+    </div>
+    <div class="two">
+        <p>Expected Output:</p>
+        <p>Single item moves downward.</p>
+    </div>
+    <h1> Flex grow</h1>
+    <div class="grow">
+        <p>Explanation:</p>
+        <p>Allows item growth.</p>
+    </div>
+    <div class="dull">
+        <p>Expected Output:</p>
+        <p>Item takes remaining space.</p>
+    </div>
+</body>
+
+</html>
