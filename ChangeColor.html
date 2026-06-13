@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change colour</title>
+    <style>
+        #divResult {
+            padding: 50px;
+            border-radius: 5px;
+            border-color: black;
+            border: dotted;
+            width: 710px;
+            height: 108px;
+
+        }
+    </style>
+    <script>
+        function onClickChanging() {
+            var colour = document.getElementById("txtColour").value;
+            document.getElementById("divResult").style.backgroundColor = colour;
+        }
+
+    </script>
+</head>
+
+<body>
+    <label>Colour</label>
+    <input id="txtColour" type="text" placeholder="Enter any colour">
+    <div id="divResult">Skincare is the process of caring for and maintaining the health of your skin. It involves
+        keeping the skin clean, hydrated, and protected from damage caused by factors such as sunlight, pollution, and
+        harsh weather conditions. A skincare routine may include cleansing, moisturizing, and applying sunscreen, as
+        well as using products designed to address specific concerns like acne, dryness, dark spots, or signs of aging.
+        Proper skincare helps the skin remain healthy, smooth, and radiant while supporting its natural protective
+        barrier.</div>
+    <button id="btnChange" onclick="onClickChanging()">Change</button>
+</body>
+
+</html>
