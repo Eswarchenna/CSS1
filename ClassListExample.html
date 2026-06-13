@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Examples of click and Next</title>
+    <style>
+         .table{
+                display: none;
+            }
+            #divClick{
+                    background-color: rgb(69, 79, 79);
+                border-radius: 10px;
+                border-color: black;
+                border: dotted;
+                padding: 45px;
+                width: 500px; 
+            }
+
+            #divNext{
+                background-color: aqua;
+                border-radius: 10px;
+                border-color: black;
+                border: dotted;
+                padding: 45px;
+                width: 500px;
+            }
+
+    </style>
+    <script defer>
+        function onClickChange() {
+            debugger;
+            document.getElementById("divClick").classList.add("table");
+            document.getElementById("divNext").classList.remove("table");
+        }
+        function onclickNext() {
+            debugger;
+            document.getElementById("divNext").classList.add("table");
+            document.getElementById("divClick").classList.remove("table");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="divClick">
+        What is haircare?
+    </div>
+    <div id="divNext" class="table">
+        HAir care is the pratice of maintaining the health,cleanliness, and appaance of hair.It involves egular washing,
+        conditioning, oiling, and protecting the hair from damage caused by pollution, heat, and harsh chemicals.proper
+        hair hair care helps keep the hair strong, shiny, smooth, and healthy while reducing problems such as hair fall,
+        dandruff, dryness, and split ends. A balanced diet, adequate hydration, and a healthy lifestyle also play an
+        important role in maintaining good hair health.
+    </div>
+    <button id="btnClick" onclick="onClickChange()">Click</button>
+    <button id="btnNext" onclick="onclickNext()">Next</button>
+</body>
+
+</html>
